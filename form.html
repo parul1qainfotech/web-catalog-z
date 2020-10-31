@@ -1,0 +1,134 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <div class="form-div">
+        <form class="form"> 
+
+        </form>
+    </div>
+    </body>
+</html>
+
+<script>
+    document.body.style.background = "linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('new_background.jpg') no-repeat";
+    document.body.style.backgroundSize="cover"
+    const formDiv=document.querySelector(".form-div")
+    formDiv.style.width="500px"
+/*     formDiv.style.textAlign="center" */
+    formDiv.style.backgroundColor="White"
+    formDiv.style.borderRadius="5px";
+    formDiv.style.padding="20px";
+    formDiv.style.marginLeft="480px"
+    formDiv.style.marginTop="50px"
+    
+    const form=document.querySelector(".form");
+    const h1=document.createElement("H1")
+
+    const textNode1=document.createTextNode("CREATE ACCOUNT")
+    h1.appendChild(textNode1)
+    h1.style.textAlign="center"
+    h1.style.fontSize="22px"
+    form.appendChild(h1)
+    
+    
+    let inputTag1=document.createElement("INPUT")
+    inputTag1.setAttribute("type", "text");
+    inputTag1.setAttribute("name", "Name");
+    inputTag1.setAttribute("placeholder", "Your Name");
+    inputTag1.style. padding=" 12px 20px";
+    inputTag1.style.width="80%"
+    inputTag1.style.border="0.5px solid lightgrey"
+    inputTag1.style.boxShadow="1px 1px black"
+    inputTag1.style.margin="20px 0px";
+    inputTag1.style.marginLeft="45px";
+    
+
+    let inputTag2=document.createElement("INPUT")
+    inputTag2.setAttribute("type", "text");
+    inputTag2.setAttribute("name", "Email");
+    inputTag2.setAttribute("placeholder", "Your Email");
+    inputTag2.style. padding=" 12px 20px";
+    inputTag2.style.width="80%"
+    inputTag2.style.border="0.5px solid lightgrey"
+    inputTag2.style.boxShadow="1px 1px black"
+    inputTag2.style.margin="20px 0px";
+    inputTag2.style.marginLeft="45px";
+   
+
+    let inputTag3=document.createElement("INPUT")
+    inputTag3.setAttribute("type", "password");
+    inputTag3.setAttribute("name", "password");
+    inputTag3.setAttribute("placeholder", "Password");
+    inputTag3.style. padding=" 12px 20px";
+    inputTag3.style.width="80%"
+    inputTag3.style.border="0.5px solid lightgrey"
+    inputTag3.style.boxShadow="1px 1px black"
+    inputTag3.style.margin="20px 0px";
+    inputTag3.style.marginLeft="45px";
+   
+
+    let inputTag4=document.createElement("INPUT")
+    inputTag4.setAttribute("type", "password");
+    inputTag4.setAttribute("name", "re-password");
+    inputTag4.setAttribute("placeholder", "Repeat Your Password");
+    inputTag4.style. padding=" 12px 20px";
+    inputTag4.style.width="80%"
+    inputTag4.style.border="0.5px solid lightgrey"
+    inputTag4.style.boxShadow="1px 1px black"
+    inputTag4.style.margin="20px 0px";
+    inputTag4.style.marginLeft="45px";
+ 
+
+    var br = document.createElement("BR");
+
+    const checkBoxTag=document.createElement("INPUT");
+    checkBoxTag.setAttribute("type", "checkbox");
+    checkBoxTag.style.margin="20px 0px";
+    checkBoxTag.style.marginLeft="45px";
+    checkBoxTag.style.display="inline"
+
+    const t1=document.createElement("strong")
+    const textNode2=document.createTextNode("I agree all statements in terms of service")
+    t1.appendChild(textNode2)
+    t1.style.display="inline"
+    t1.style.fontSize="15px"
+    t1.style.marginLeft="10px";
+
+   /*  const submitBtn=document.createElement("INPUT");
+    submitBtn.setAttribute("type", "submit");
+    submitBtn.style.backgroundColor="rgb(108, 188, 202)"
+    submitBtn.style.width="80%"
+    submitBtn.style.margin="20px 0px";
+    submitBtn.style.marginLeft="45px";
+    submitBtn.style.padding=" 10px 20px";
+    submitBtn.style.color="#fff";
+    submitBtn.style.fontWeight="bolder" */
+    const signUpButton=document.createElement("input");
+    signUpButton.setAttribute("type","submit")
+    signUpButton.style.backgroundColor="rgb(108, 188, 202)"
+    signUpButton.style.width="80%"
+    signUpButton.style.margin="20px 0px";
+    signUpButton.style.marginLeft="45px";
+    signUpButton.style.padding=" 10px 20px";
+    signUpButton.style.color="#fff";
+    signUpButton.style.fontWeight="bolder"
+
+
+    form.appendChild(inputTag1)
+    form.appendChild(inputTag2)
+    form.appendChild(inputTag3)
+    form.appendChild(inputTag4)
+    form.appendChild(br)
+    form.appendChild(checkBoxTag)
+    form.appendChild(t1)
+    form.appendChild(br)
+    form.appendChild(signUpButton)
+    form.setAttribute("action","file:///home/mohit/Desktop/assignment/web/outputform.html")
+    form.setAttribute("method","get")
+    
+   
+    
+</script>

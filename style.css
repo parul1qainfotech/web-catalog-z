@@ -1,0 +1,48 @@
+.img-height img{
+    height: 150px;
+    width: 90%;
+}
+.img-height img:hover{
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.6);
+}
+
+.bgImage{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("background-7.jpg");
+  height: 250px;
+}
+
+
+.btnclass{
+  color:white;
+  padding: 10px 20px;
+  margin: 0px 40px;
+}
+
+
+.colr-btn{
+  color:#fff;
+  background-color: #008080;
+
+}
+.colr-text{
+  color: #008080 ;
+}
+.colr-btn-2{
+  color: #fff;
+  background-color: #050709;
+}
+.colr-text-2{
+  color:  #2E343B;
+}
+
+.link-card{
+  width: 18rem; 
+  background-color: lightgrey;
+}
+.about-card{
+  width: 25rem; 
+  background-color: lightgrey;
+}
+.next-btn{
+  margin-right: 70px;
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog-Z</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://kit.fontawesome.com/bdc73183e5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+       <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between pt-3">
+                <div class="p-2">
+                    <h1 class="ml-5 colr-text"><em class="fas fa-film mr-3"></em>Catalog-Z</h1>
+                </div>
+                <div class="p-2">
+                    <nav role="navigation">
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link active text-dark" aria-current="page" href="#" >Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="form.html" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+
+
+    <!-- Section-search-bar -->
+    <section aria-label="searchbar">
+        <div class="container-fluid bgImage mt-1 ">
+            <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                <div>
+                    <form class="  d-flex ">
+                        <div class="input-group " style="width: 300px;">
+                            <input type="text"  class="form-control form-control-sm " placeholder="Search" id="search-input" aria-label="search-input" aria-describedby="button-addon2">
+                            <button onclick="urlparam()" class="btn colr-btn" id="button-addon2" aria-label="search-button" ><em class="fa fa-search"></em></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Section-search-bar -->
+
+
+
+    
+
+    <main >
+        <!-- Section-Images -->
+        <section aria-label="section-images">
+            <div class="container-fluid">
+                <div class="row pt-5 pl-5 pr-5">
+                    <div class=" d-flex justify-content-between">
+                        <h2 class="colr-text"  aria-label="videos-heading">Latest Videos</h2>
+                        <p >Page <button style="padding:1px 4px;" class="btn btn-sm colr-btn" aria-label="page number out of 180">1</button> of 180</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  mt-3 img-height">
+                <div class="row pl-5 pr-5">
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-1.jpeg" alt="hangers">
+                        <div class="card-body img-text">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-2.jpeg" alt="perfumes">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-3.webp" alt=" three wall watches on the white wall">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                <div class="col-lg-3 card border-0">
+                    <img class="img-fluid card-img-top" src="img-new-4.jpg" alt=" three pots of plant">
+                    <div class="card-body img-text">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+                </div>
+                <div class="row pl-5 pr-5">
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-5.jpg" alt="green forest">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-6.jpg" alt="white headphones on the pink wall">
+                        <div class="card-body img-text">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-7.jpeg" alt="small bus toy">
+                        <div class="card-body img-text">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-8.jpeg" alt=" buildings of a city">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pl-5 pr-5">
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-9.jpeg" alt="boat and sunset view">
+                        <div class="card-body img-text">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-10.jpg" alt="roses">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                <div class="col-lg-3 card border-0">
+                    <img class="img-fluid card-img-top" src="img-new-11.jpg" alt="Peace word on the bank of a sea">
+                    <div class="card-body img-text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 card border-0">
+                    <img class="img-fluid card-img-top" src="img-new-12.jpg" alt="turtle">
+                    <div class="card-body img-text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </div>
+                </div>
+                </div>
+                <div class="row pl-5 pr-5">
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-1.jpeg" alt="hangers">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-2.jpeg" alt="perfumes">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-3.webp" alt="three wall watches on the white wall">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-4.jpg" alt="three pots of plant">
+                        <div class="card-body img-text">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pl-5 pr-5">
+                <div class="col-lg-3 card border-0">
+                    <img class="img-fluid card-img-top" src="img-new-5.jpg" alt="green forest">
+                    <div class="card-body img-text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </div>
+                </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-6.jpg" alt="white headphones on the pink wall">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 card border-0">
+                        <img class="img-fluid card-img-top" src="img-new-7.jpeg" alt="small bus toy">
+                        <div class="card-body img-text">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                <div class="col-lg-3 card border-0">
+                    <img class="img-fluid card-img-top" src="img-new-8.jpeg" alt="buildings of a city">
+                    <div class="card-body img-text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-Images -->
+
+
+        <!-- Section-page-navigation -->
+        <section aria-label="page-navigations">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2">
+                        <button class="btn colr-btn btnclass" aria-label="Previous page navigation">Prev</button>
+                    </div>
+                    <div class="p-2">
+                        <button id="b1" onclick="valueMultiply1()" class="btn btn-sm colr-btn-2" aria-label="page  1 navigation">1</button>
+                        <button id="b2" onclick="valueMultiply2()" class="btn btn-sm" aria-label="page 2 navigation">2</button>
+                        <button id="b3" onclick="valueMultiply3()" class="btn btn-sm  " aria-label="page 3 navigation">3</button>
+                        <button id="b4" onclick="valueMultiply4()" class="btn btn-sm " aria-label="page 4 navigation">4</button>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn colr-btn btnclass next-btn"  aria-label="Next page navigation">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-page-navigations -->
+    </main>
+   
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid mt-5" style="background-color: lightgrey;">
+            <div class="row justify-content-around py-3 px-3">
+                <div class="ml-5 card col-lg-4 border-0 about-card" >
+                    <div class="card-body ">
+                        <h3 class=" card-title colr-text">About Catalog-Z</h3>
+                        <p class="card-text my-3 h6 colr-text-2"> Catalog-Z is free bootstrap 5 Alpha 2 Html</p>
+                        <p class="card-text my-3 h6 colr-text-2"> Template for phot and video websites you can.</p>
+                        <p class="card-text my-3 h6 colr-text-2"> Freely use this template layout for a front-end</p>
+                        <p class="card-text my-3 h6 colr-text-2">Integration with any kind of CMS Website</p>
+                    </div>
+                </div>
+                <div class=" ml-5 card col-lg-4 pt-3 border-0 link-card" >
+                        <h3 class="card-title colr-text">Our Links</h3>
+                        <p class="card-text h6 colr-text-2">Advertise</p>
+                        <p class="card-text h6 colr-text-2">Support</p>
+                        <p class="card-text h6 colr-text-2">Our Company</p>
+                        <p class="card-text h6 colr-text-2">Product</p>
+                </div>
+                <div class=" col-lg-4 pt-5">
+                        <a class=" mx-2" href="#"  aria-label="facebook logo" ><em class="fa fa-facebook-official fa-lg blue-text"></em></a>
+                        <a class=" mx-2" href="#"  aria-label="instagram logo " style="color: #870C25;"><em class="fa fa-instagram fa-lg"></em></a>
+                        <a class=" mx-2" href="#"  aria-label="twitter logo " ><em class="fa fa-twitter fa-lg"></em></a>
+                        <a class=" mx-2" href="#"  aria-label="linkedIn logo"><em class="fa fa-linkedin fa-lg"></em></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"
+        integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d"
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>
